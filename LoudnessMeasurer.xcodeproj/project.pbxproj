@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5532CA5E1ACBDBCC00789831 /* run_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5532CA5D1ACBDBCC00789831 /* run_tests.m */; };
+		5532CA5F1ACBDBCF00789831 /* loudness.m in Sources */ = {isa = PBXBuildFile; fileRef = 5532CA5B1ACBDBBD00789831 /* loudness.m */; };
+		5532CA601ACBDF2700789831 /* LoudnessMeasurer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FB7F4818BCAC2D001DB6CC /* LoudnessMeasurer.m */; };
 		55D2E90618A0F63400009739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D2E90518A0F63400009739 /* Foundation.framework */; };
 		55D2E91718A0F6EA00009739 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D2E91618A0F6EA00009739 /* Accelerate.framework */; };
 		55D2E91E18A0F89C00009739 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D2E91D18A0F89C00009739 /* AudioToolbox.framework */; };
-		55FB7F4918BCAC2D001DB6CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FB7F4518BCAC2D001DB6CC /* main.m */; };
 		55FB7F4A18BCAC2D001DB6CC /* LoudnessMeasurer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FB7F4818BCAC2D001DB6CC /* LoudnessMeasurer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5532CA521ACBDB9A00789831 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		55D2E90018A0F63400009739 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -27,17 +38,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		55D2E90218A0F63400009739 /* loudness */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = loudness; path = run_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		5532CA541ACBDB9A00789831 /* loudness */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = loudness; sourceTree = BUILT_PRODUCTS_DIR; };
+		5532CA561ACBDB9A00789831 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5532CA5B1ACBDBBD00789831 /* loudness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = loudness.m; path = Source/loudness.m; sourceTree = "<group>"; };
+		5532CA5D1ACBDBCC00789831 /* run_tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = run_tests.m; path = Source/run_tests.m; sourceTree = "<group>"; };
+		55D2E90218A0F63400009739 /* run_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = run_test; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D2E90518A0F63400009739 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		55D2E91618A0F6EA00009739 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		55D2E91D18A0F89C00009739 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		55FB7F4518BCAC2D001DB6CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = "<group>"; };
 		55FB7F4618BCAC2D001DB6CC /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = "<group>"; };
 		55FB7F4718BCAC2D001DB6CC /* LoudnessMeasurer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoudnessMeasurer.h; path = Source/LoudnessMeasurer.h; sourceTree = "<group>"; };
 		55FB7F4818BCAC2D001DB6CC /* LoudnessMeasurer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoudnessMeasurer.m; path = Source/LoudnessMeasurer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5532CA511ACBDB9A00789831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55D2E8FF18A0F63400009739 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,13 +72,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5532CA551ACBDB9A00789831 /* loudness */ = {
+			isa = PBXGroup;
+			children = (
+				5532CA561ACBDB9A00789831 /* main.m */,
+			);
+			path = loudness;
+			sourceTree = "<group>";
+		};
 		55D2E8F918A0F63400009739 = {
 			isa = PBXGroup;
 			children = (
-				55FB7F4518BCAC2D001DB6CC /* main.m */,
+				5532CA5B1ACBDBBD00789831 /* loudness.m */,
+				5532CA5D1ACBDBCC00789831 /* run_tests.m */,
 				55FB7F4618BCAC2D001DB6CC /* Prefix.pch */,
 				55FB7F4718BCAC2D001DB6CC /* LoudnessMeasurer.h */,
 				55FB7F4818BCAC2D001DB6CC /* LoudnessMeasurer.m */,
+				5532CA551ACBDB9A00789831 /* loudness */,
 				55D2E90418A0F63400009739 /* Frameworks */,
 				55D2E90318A0F63400009739 /* Products */,
 			);
@@ -66,7 +97,8 @@
 		55D2E90318A0F63400009739 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55D2E90218A0F63400009739 /* loudness */,
+				55D2E90218A0F63400009739 /* run_test */,
+				5532CA541ACBDB9A00789831 /* loudness */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +116,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5532CA531ACBDB9A00789831 /* loudness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5532CA581ACBDB9A00789831 /* Build configuration list for PBXNativeTarget "loudness" */;
+			buildPhases = (
+				5532CA501ACBDB9A00789831 /* Sources */,
+				5532CA511ACBDB9A00789831 /* Frameworks */,
+				5532CA521ACBDB9A00789831 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = loudness;
+			productName = loudness;
+			productReference = 5532CA541ACBDB9A00789831 /* loudness */;
+			productType = "com.apple.product-type.tool";
+		};
 		55D2E90118A0F63400009739 /* run_test */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55D2E91018A0F63400009739 /* Build configuration list for PBXNativeTarget "run_test" */;
@@ -98,7 +147,7 @@
 			);
 			name = run_test;
 			productName = loudness;
-			productReference = 55D2E90218A0F63400009739 /* loudness */;
+			productReference = 55D2E90218A0F63400009739 /* run_test */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -109,6 +158,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Ricci Adams";
+				TargetAttributes = {
+					5532CA531ACBDB9A00789831 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
 			};
 			buildConfigurationList = 55D2E8FD18A0F63400009739 /* Build configuration list for PBXProject "LoudnessMeasurer" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -123,23 +177,64 @@
 			projectRoot = "";
 			targets = (
 				55D2E90118A0F63400009739 /* run_test */,
+				5532CA531ACBDB9A00789831 /* loudness */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5532CA501ACBDB9A00789831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5532CA5F1ACBDBCF00789831 /* loudness.m in Sources */,
+				5532CA601ACBDF2700789831 /* LoudnessMeasurer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55D2E8FE18A0F63400009739 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5532CA5E1ACBDBCC00789831 /* run_tests.m in Sources */,
 				55FB7F4A18BCAC2D001DB6CC /* LoudnessMeasurer.m in Sources */,
-				55FB7F4918BCAC2D001DB6CC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		5532CA591ACBDB9A00789831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5532CA5A1ACBDB9A00789831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		55D2E90E18A0F63400009739 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -229,6 +324,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5532CA581ACBDB9A00789831 /* Build configuration list for PBXNativeTarget "loudness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5532CA591ACBDB9A00789831 /* Debug */,
+				5532CA5A1ACBDB9A00789831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		55D2E8FD18A0F63400009739 /* Build configuration list for PBXProject "LoudnessMeasurer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
