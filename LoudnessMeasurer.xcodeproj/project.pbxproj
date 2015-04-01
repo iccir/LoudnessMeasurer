@@ -39,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		5532CA541ACBDB9A00789831 /* loudness */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = loudness; sourceTree = BUILT_PRODUCTS_DIR; };
-		5532CA561ACBDB9A00789831 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5532CA5B1ACBDBBD00789831 /* loudness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = loudness.m; path = Source/loudness.m; sourceTree = "<group>"; };
 		5532CA5D1ACBDBCC00789831 /* run_tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = run_tests.m; path = Source/run_tests.m; sourceTree = "<group>"; };
 		55D2E90218A0F63400009739 /* run_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = run_test; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,14 +71,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5532CA551ACBDB9A00789831 /* loudness */ = {
-			isa = PBXGroup;
-			children = (
-				5532CA561ACBDB9A00789831 /* main.m */,
-			);
-			path = loudness;
-			sourceTree = "<group>";
-		};
 		55D2E8F918A0F63400009739 = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +79,6 @@
 				55FB7F4618BCAC2D001DB6CC /* Prefix.pch */,
 				55FB7F4718BCAC2D001DB6CC /* LoudnessMeasurer.h */,
 				55FB7F4818BCAC2D001DB6CC /* LoudnessMeasurer.m */,
-				5532CA551ACBDB9A00789831 /* loudness */,
 				55D2E90418A0F63400009739 /* Frameworks */,
 				55D2E90318A0F63400009739 /* Products */,
 			);
