@@ -1,2 +1,3 @@
 tests/*.txt
 *.wav
+.DS_Store
