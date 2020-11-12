@@ -30,7 +30,9 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+#if __x86__
 #include <xmmintrin.h>
+#endif
 
 #include <Accelerate/Accelerate.h>
 #include <AudioToolbox/AudioToolbox.h>
@@ -212,8 +214,10 @@ static inline void sFilter(const LoudnessMeasurer *self, LoudnessMeasurerChannel
         channel->_samplePeak = max;
     }
 
+#if __x86__
     unsigned int mxcsr = _mm_getcsr();
     _mm_setcsr(mxcsr | _MM_FLUSH_ZERO_ON);
+#endif
 
     double *s1 = channel->_scratch  + 2;
     double *s2 = channel->_scratch2 + 2;
@@ -234,8 +238,9 @@ static inline void sFilter(const LoudnessMeasurer *self, LoudnessMeasurerChannel
     for (size_t i = 0; i < frames; i++) {
         bufferPost[i] = s1[i];
     }
-
+#if __x86__
     _mm_setcsr(mxcsr);
+#endif
 }
 
 
